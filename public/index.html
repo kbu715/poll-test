@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문조사</title>
+<style>
+    form{
+        text-align:center;
+    }
+    h1{
+        text-align:center;
+    }
+</style>    
+</head>
+<body>
+<h1>해당되는 항목을 선택하세요</h1>
+    
+<form action="/pollAction" method="get">
+    <p><h3>성별</h3></p>   
+    <input type="radio" id="male" name="gender" value="남">       
+    <label for="male">남</label>
+    <input type="radio" id="female" name="gender" value="여">
+    <label for="female">여</label> 
+    
+    <p><h3>선호동물</h3></p>
+    <input type="radio" id="tiger" name="animal" value="호랑이">
+    <label for="tiger">호랑이</label>
+    <input type="radio" id="elepant" name="animal" value="코끼리">
+    <label for="elepant">코끼리</label>
+    <br><br><br>
+    <input type="submit" value="제출">
+</form>
+</body>
+</html>
