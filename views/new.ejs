@@ -14,16 +14,16 @@
 </style>    
 </head>
 <body>
-<h1>해당되는 항목을 선택하세요</h1>
-    
-<form action="/pollAction" method="get">
-    <p><h3>성별</h3></p>   
+<h1>설문 조사에 참여해주세요</h1>
+<hr>   
+<form action="/pollAction" method="POST">
+    <p><h3>성 별</h3></p>   
     <input type="radio" id="male" name="gender" value="남">       
-    <label for="male">남</label>
+    <label for="male">남자</label>
     <input type="radio" id="female" name="gender" value="여">
-    <label for="female">여</label> 
+    <label for="female">여자</label> 
     
-    <p><h3>선호동물</h3></p>
+    <p><h3>선호 동물</h3></p>
     <input type="radio" id="tiger" name="animal" value="호랑이">
     <label for="tiger">호랑이</label>
     <input type="radio" id="elepant" name="animal" value="코끼리">

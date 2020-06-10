@@ -1,44 +1,60 @@
 <!doctype html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML</title>
-    <style>
-      table {
-        width: 100%;
-      }
-      table, th, td {
-        border: 1px solid #bcbcbc;
-      }
-    </style>
-  </head>
-  <body>
-    <table>
-      <caption>Result</caption>
-      <thead>
-        <tr>
-          <th></th>
-          <th>남</th>
-          <th>여</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>호랑이</th>
-          <td><%=data[0]%></td>
-          <td><%=data[2]%></td>
-        </tr>
-        <tr>
-          <th>코끼리</th>
-          <td><%=data[1]%></td>
-          <td><%=data[3]%></td>
-        </tr>
-        <tr>
-          <th>합계</th>
-          <td><%=data[0]+data[1]%></td>
-          <td><%=data[2]+data[3]%></td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML</title>
+  <style>
+    table.type11 {
+      border-collapse: separate;
+      border-spacing: 1px;
+      text-align: center;
+      line-height: 1.5;
+      margin: 20px 10px;
+    }
+
+    table.type11 th {
+      width: 155px;
+      padding: 10px;
+      font-weight: bold;
+      vertical-align: top;
+      color: #fff;
+      background: #ce4869;
+    }
+
+    table.type11 td {
+      width: 155px;
+      padding: 10px;
+      vertical-align: top;
+      border-bottom: 1px solid #ccc;
+      background: #eee;
+    }
+  </style>
+</head>
+
+<body>
+  <table class="type11">
+    <thead>
+      <tr>
+        <th scope="cols"></th>
+        <th scope="cols">남자</th>
+        <th scope="cols">여자</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>호랑이</th>
+        <td><%=data[0]%></th>
+        <td><%=data[2]%></th>
+      </tr>
+      <tr>
+        <td>코끼리</th>
+        <td><%=data[1]%></th>
+        <td><%=data[3]%></th>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+
 </html>
